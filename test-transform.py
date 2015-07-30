@@ -29,7 +29,7 @@ class MyDrawing(Sketchy):
     g.push()
     g.translate(self.x, self.y)
     g.rotate(self.r)
-    g.scale(100, 100)
+    g.scale(250, 250)
     g.fill(1.0, 0.5, 0.25, 1.0)
     g.rect(-0.5, -0.5, 1.0, 1.0)
     g.pop()
