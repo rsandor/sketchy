@@ -88,6 +88,21 @@ class Graphics(object):
     glVertex2f(float(x2), float(y2))
     glEnd()
 
+  def push(self):
+    glPushMatrix()
+
+  def pop(self):
+    glPopMatrix()
+
+  def rotate(self, angle):
+    glRotatef(float(180.0*angle/3.1415), 0.0, 0.0, 1.0)
+
+  def translate(self, x, y):
+    glTranslatef(float(x), float(y), 0.0)
+
+  def scale(self, x, y):
+    glScalef(float(x), float(y), 1.0)
+
 
 class Sketchy(object):
   def __init__(self):
